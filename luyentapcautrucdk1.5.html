@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Điểm bài kiểm tra</th>
+        <th>Điểm thi giữa kỳ</th>
+        <th>Điểm thi cuối kỳ</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            <input id="NhapVao1" type="number">
+        </td>
+        <td>
+            <input id=" NhapVao2" type="number">
+        </td>
+        <td>
+            <input id="NhapVao3" type="number">
+        </td>
+        <td>
+            <button onclick="nhâpvao()" type="submit">Tính</button>
+        </td>
+    </tr>
+</table>
+<h3 id="HT"></h3>
+<script>
+    function ThucThi() {
+        let a = +document.getElementById('DauVao1').value
+        let b = +document.getElementById('DauVao2').value
+        let c = +document.getElementById('DauVao3').value
+        let d = (a+b+c)/3
+        if (d<3) {
+            document.getElementById('HT').innerHTML = "Xếp loại Ké́m"
+        }
+        else if (d<5) {
+            document.getElementById('HT').innerHTML = 'Xếp loại Yếu'
+        }
+        else if (d<=6) {
+            document.getElementById('HT').innerHTML = 'Xếp loại Trung bình'
+        }
+        else if (d<8) {
+            document.getElementById('HT').innerHTML = 'Xếp loại Khá'
+        }
+        else
+            document.getElementById('HT').innerHTML = 'Xếp loại Giỏi'
+
+    }
+
+</script>
+</body>
+</html>

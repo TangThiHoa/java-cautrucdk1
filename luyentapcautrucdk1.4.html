@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nhapa">
+<input type="number" id="nhapb">
+<input type="number" id="nhapc">
+<button type="button" onclick="AA()"> ENTER</button>
+<H1 id="kq"></H1>
+<script>
+    let a = document.getElementById("nhapa").value
+    let b = document.getElementById("nhapb").value
+    let c = document.getElementById("nhapc").value
+    function AA (){
+        let max=a
+        if (max<b){
+            max=b
+        }
+        if (max<c){
+            max=c
+        }
+        document.getElementById('kq').innerHTML=('max là '+ max)
+
+    }
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

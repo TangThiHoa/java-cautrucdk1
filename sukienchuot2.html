@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="anh"
+     src="https://pdp.edu.vn/wp-content/uploads/2021/01/hinh-anh-cute-de-thuong.jpg"
+     alt="" style="position: absolute; top:50px; left: 50px">
+
+<button onclick="phai()">sang phai</button>
+<button onclick="trai()">sang trai</button>
+<button onclick="xuong()">xuong</button>
+<button onclick="len()">len</button>
+<script>
+    let anh = document.getElementById("anh")
+    function phai (){
+        anh.style.left=parseInt(anh . style. left) + 20 +"px";
+    }
+    function trai (){
+        anh.style.left=parseInt(anh . style. left) - 20 + "px";
+    }
+    function len (){
+        anh.style.top=parseInt(anh . style. top)- 20 + "px";
+    }
+    function xuong (){
+        anh.style.top =parseInt(anh . style. top) + 20 + "px";
+    }
+
+</script>
+</body>
+</html>

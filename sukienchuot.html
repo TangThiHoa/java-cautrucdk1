@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" id = "HA">
+<img id="hihi"
+     src="https://img-cache.coccoc.com/image2?i=2&l=49/767686185"
+     alt="" style="position: absolute; top: 50px; left: 50px";>
+<button onclick="phai()">sang phai</button>
+<button onclick="trai()">sang trai</button>
+<button onclick="len()">len</button>
+<button onclick="xuong()">xuong</button>
+
+
+<script>
+    let ha= document.getElementById("HA");
+    let hihi= document.getElementById("hihi");
+    function phai () {
+        hihi.style.left= parseInt(hihi.style.left) + 10 + 'px';
+
+    }
+    function trai () {
+        hihi.style.left = parseInt(hihi.style.left) - 10 + 'px';
+    }
+    function len () {
+        hihi.style.top= parseInt(hihi.style.top) - 10 + 'px';
+    }
+    function xuong () {
+        hihi.style.top = parseInt(hihi.style.top) + 10 + 'px';
+    }
+
+
+</script>
+
+</body>
+</html>

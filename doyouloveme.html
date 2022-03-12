@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+        background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGWQ7un42ddGthxzDqmRdQouVHk6je9zPOEw&usqp=CAU');
+        background-size:cover;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Do you hate me ?</h1>
+<button style="position: absolute; left:80px ;top:  80px;" onmouseover="dichuyen()" id="nani">Yes</button>
+<button onclick="no()">No</button>
+<script>
+    let nani = document.getElementById("nani");
+    let dm = document.getElementById("Do you hate me ?");
+    function dichuyen () {
+        nani.style.left= Math.random() * 1000 + "px";
+        nani.style.top =Math.random() * 400 + "px";
+    }
+    function no() {
+        alert(" Hảo bạn.haha ");
+
+    }
+</script>
+
+</body>
+</html>

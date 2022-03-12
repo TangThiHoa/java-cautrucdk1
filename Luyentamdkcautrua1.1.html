@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapa">
+<input type="text" id="nhapb">
+<button type="button" onclick="AA()"> ENTER</button>
+<H1 id="kq"></H1>
+<script>
+    let a =  document.getElementById("nhapa")
+    let b = document.getElementById("nhapb")
+    let kq= document.getElementById("kq")
+    function AA (){
+      let c=a.value
+      let d=b.value
+        if(c%d==0){
+            kq.innerHTML="chia het cho b"
+        }else
+            kq.innerHTML="khong chia het cho b "
+    }
+</script>
+
+</body>
+</html>
